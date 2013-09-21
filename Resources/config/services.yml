@@ -1,0 +1,25 @@
+# 
+# This file is part of the Ksn135HtpasswdBundle package.
+#
+# (c) Serg N. Kalachev <serg@kalachev.ru>
+#
+# This source file is subject to the MIT license that is bundled
+# with this source code in the file LICENSE.
+# 
+parameters:
+    htpasswd_encoder.class:       Ksn135\HtpasswdBundle\Security\HtpasswdEncoder
+    htpasswd_user.class:          Ksn135\HtpasswdBundle\Security\User\HtpasswdUser
+    htpasswd_user_provider.class: Ksn135\HtpasswdBundle\Security\User\HtpasswdUserProvider
+
+    # htpasswd_user_provider.filename: /etc/nagios3/htpasswd.users
+
+services:
+    htpasswd_encoder:
+        class: "%htpasswd_encoder.class%"   
+
+    htpasswd_user:
+        class: "%htpasswd_user.class%"   
+
+    htpasswd_user_provider:
+        class: "%htpasswd_user_provider.class%"
+        arguments: ["%htpasswd_user_provider.filename%"]

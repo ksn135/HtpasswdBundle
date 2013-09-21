@@ -1,0 +1,22 @@
+{
+    "name": "ksn135/htpasswd-bundle",
+    "description": "Bundle for Symfony2 for basic authentication of HTTP users listed in the files created by htpasswd utility",
+    "keywords": ["ksn135", "htpasswd", "bundle"],
+    "homepage": "http://github.com/ksn135/HtpasswdBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serg N. Kalachev",
+            "email": "serg@kalachev.ru"
+        }
+    ],
+    "require": {
+        "php":             ">=5.3.2",
+        "symfony/security": ">=2.2"
+    },
+    "autoload": {
+        "psr-0": { "Ksn135\\HtpasswdBundle": "" }
+    },
+    "target-dir": "Ksn135/HtpasswdBundle"
+}
