@@ -3,26 +3,23 @@ Ksn135HtpasswdBundle
 
 Bundle for Symfony2 for basic authentication of HTTP users listed in the file created by htpasswd utility
 
-State
------
-
-While the provided feature set is certainly production ready, this Bundle is still under development.
+[![Build Status](https://secure.travis-ci.org/ksn135/HtpasswdBundle.png?branch=master)](https://travis-ci.org/ksn135/HtpasswdBundle)
 
 Documentation
 -------------
 
 The documentation is stored in the `Resources/doc/index.rst` file in this bundle:
 
-[Read the Documentation](http://github.com/ksn135/HtpasswdBundle/blob/master/Resources/doc/index.rst)
+[Read the Documentation](Resources/doc/index.rst)
 
 Installation
 ------------
 
-All the installation instructions are located in the [documentation](http://github.com/ksn135/HtpasswdBundle/blob/master/Resources/doc/index.rst).
+All the installation instructions are located in the [documentation](Resources/doc/index.rst).
+
 
 License
 -------
 
-This bundle is under the MIT license. See the complete license in the bundle:
+This bundle is available under the [MIT license](Resources/meta/LICENSE).
 
-    Resources/meta/LICENSE
