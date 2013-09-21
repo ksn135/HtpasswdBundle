@@ -10,7 +10,8 @@ Add ksn135/htpasswd-bundle to composer.json
 
     "require": {
 
-        "ksn135/htpasswd-bundle": "~0.1@dev",
+        "ksn135/htpasswd-bundle": "dev-master"
+
     }
 
 Add Ksn135HtpasswdBundle to your application kernel
@@ -63,8 +64,5 @@ Update your security.yml configuration
         access_control:
             - { path: ^/, roles: ROLE_USER }
 
-
-
 .. note::
-
     Modify 'htpasswd_user_provider.filename' parameter to suit your needs.
