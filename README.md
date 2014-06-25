@@ -10,16 +10,16 @@ Documentation
 
 The documentation is stored in the `Resources/doc/index.rst` file in this bundle:
 
-[Read the Documentation](Resources/doc/index.rst)
+[Read the Documentation](https://github.com/ksn135/HtpasswdBundle/blob/master/Resources/doc/index.rst)
 
 Installation
 ------------
 
-All the installation instructions are located in the [documentation](Resources/doc/index.rst).
+All the installation instructions are located in the [documentation](https://github.com/ksn135/HtpasswdBundle/blob/master/Resources/doc/index.rst).
 
 
 License
 -------
 
-This bundle is available under the [MIT license](Resources/meta/LICENSE).
+This bundle is available under the [MIT license](https://github.com/ksn135/HtpasswdBundle/blob/master/Resources/meta/LICENSE).
 
