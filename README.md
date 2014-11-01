@@ -1,5 +1,6 @@
 Ksn135HtpasswdBundle
 ====================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/ksn135/HtpasswdBundle?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Bundle for Symfony2 for basic authentication of HTTP users listed in the file created by htpasswd utility
 
