@@ -11,6 +11,7 @@
 
 namespace Ksn135\HtpasswdBundle\Security\User;
 
+use Symfony\Component\Security\Core\Exception\BadCredentialsException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\EquatableInterface;
 
@@ -25,11 +26,22 @@ class HtpasswdUser implements UserInterface, EquatableInterface
     {
         $this->username = $username;
         $this->roles = $roles;
-   
-        $array = explode('$',$hash);
 
-        $this->salt = $array[2];
-        $this->password = $hash;
+        if( strpos($hash, "$") !== false ){
+            $array = explode('$',$hash);
+
+            $this->salt = $array[2];
+            $this->password = $hash;
+        }
+        elseif( "{SHA}" === substr($hash, 0, 5) ){
+            $this->salt = null;
+            $this->password = $hash;
+        }
+        else{
+            throw new BadCredentialsException("unable to encode password");
+        }
+
+
     }
 
     public function __toString()
