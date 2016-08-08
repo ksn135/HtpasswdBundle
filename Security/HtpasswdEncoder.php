@@ -12,7 +12,7 @@
 namespace Ksn135\HtpasswdBundle\Security;
 
 use Symfony\Component\Security\Core\Encoder\PasswordEncoderInterface;
-use Symfony\Component\Security\Core\Util\StringUtils;
+use Ksn135\HtpasswdBundle\Services\StringUtils;
 
 
 class HtpasswdEncoder implements PasswordEncoderInterface
